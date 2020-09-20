@@ -31,7 +31,7 @@ open venslator.xcodeproj
 ```
 
 ### Download the binary
-You can download the latest release's binary from the Releases page
+You can download the latest binary from [here](https://github.com/ipavlidakis/venslator/releases/latest)
 
 ## Usage
 venslator requires the following options/arguements:
@@ -48,37 +48,51 @@ The following are optional:
 ## Examples
 1. We want to localize using GoogleTranslate from English to Greek a file that exists in folder /Users/test/Desktop/localisations/en.lproj/Localizable.strings. The following command can be used
 ```
-venslator \                                                 
+venslator \
+gtranslate \           
+translate \                                      
 en \
 el \
 /Users/test/Desktop/localisations/ \
---api gtranslate \
 --api-key <YOUR-API-KEY>
 ```
 
 2. We want to localize using NLPTranslation from English to Greek a file that exists in folder /Users/test/Desktop/localisations/en.lproj/Localizable.strings. The following command can be used
 ```
-venslator \                                                 
+venslator \  
+nlptranslation \                                               
 en \
 el \
 /Users/test/Desktop/localisations/ \
---api nlptranslation \
 --api-key <YOUR-API-KEY>
 ```
 
 3. We want to localize using GoogleTranslate from Greek to Italian and Spanish a file that exists in folder /Users/test/Desktop/localisations/el.lproj/Localizable.strings. The following command can be used
 ```
-venslator \                                                 
+venslator \                         
+gtranslate \           
+translate \                           
 gr \
 es,it \
 /Users/test/Desktop/localisations/ \
---api gtranslate \
+--api-key <YOUR-API-KEY>
+```
+
+4. We want to localize using GoogleTranslate from Greek to Italian and Spanish a file that exists in folder /Users/test/Desktop/localisations/el.lproj/Localizable.strings while allowing venslator to take care of the API key generation. The following command can be used
+```
+venslator \                         
+gtranslate \           
+auto-translate \                           
+gr \
+es,it \
+/Users/test/Desktop/localisations/ \
+/Users/test/Desktop/google_account_credentials.json \
 --api-key <YOUR-API-KEY>
 ```
 
 ## Notes
 1. Speed depends mainly on the API you will choose
-2. Before using the Google Translate API you will have to setup the gcloud cli on your computer following the instructions you can find [here](https://cloud.google.com/sdk/docs/install). Once you have done that you can you the following command to generate the API key for the API(as it's life duration it's small, you can regenerate it before running the venslator flow)
+2. Before using the Google Translate API you will have to setup the gcloud cli on your computer following the instructions you can find [here](https://cloud.google.com/sdk/docs/install). Once you have done that you can you the following command to generate the API key for the API(as it's life duration it's small, you can regenerate it before running the venslator flow). By using the auto-translate command, venslator can take care of the key generation for you. Otherwise you will have to run the following and use the generated key in your venslator call
 ```
 export GOOGLE_APPLICATION_CREDENTIALS=<PATH-TO-KEY-FILE> && \
 gcloud auth application-default print-access-token 
