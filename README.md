@@ -96,5 +96,5 @@ gcloud auth application-default print-access-token
 Looking forward for your contributions
 
 ## Author
-* [Twitter](https://www.twitter.com/u/3liaspv)
+* [Twitter](https://twitter.com/3liaspav)
 * [LinkedIn](https://www.linkedin.com/in/ipavlidakis/)
