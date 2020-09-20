@@ -6,8 +6,8 @@ Do you also think that doing localisations should be easier?
 If yes, then venslator is the solution to your localisation problems. Venslator will remove the hussle of localising your iOS/macOS/iPadOS/tvOS apps or any other app that uses String files to store localisations strings.
 
 Venslator, currently can translate your files using 2 APIs:
-1. Google Translate (free quota: 500k requests)
-2. NLP translation (fee quota: 300 requests, limitation on concurrent requests to 2)
+1. [Google Translate](https://cloud.google.com/translate) (free quota: 500k requests)
+2. [NLP translation](https://rapidapi.com/gofitech/api/NLP%20Translation) (fee quota: 300 requests, limitation on concurrent requests to 2)
 
 # How to use
 
@@ -78,7 +78,7 @@ es,it \
 
 ## Notes
 1. Speed depends mainly on the API you will choose
-2. Before using the Google Translate API you will have to setup the gcloud cli on your computer following the instructions you can find https://cloud.google.com/sdk/docs/install. Once you have done that you can you the following command to generate the API key for the API(as it's life duration it's small, you can regenerate it before running the venslator flow)
+2. Before using the Google Translate API you will have to setup the gcloud cli on your computer following the instructions you can find [here](https://cloud.google.com/sdk/docs/install). Once you have done that you can you the following command to generate the API key for the API(as it's life duration it's small, you can regenerate it before running the venslator flow)
 ```
 export GOOGLE_APPLICATION_CREDENTIALS=<PATH-TO-KEY-FILE> && \
 gcloud auth application-default print-access-token 
@@ -96,5 +96,5 @@ gcloud auth application-default print-access-token
 Looking forward for your contributions
 
 ## Author
-* Twitter: @3liaspav
-* LinkedIn: https://www.linkedin.com/in/ipavlidakis/
+* [Twitter](https://www.twitter.com/u/3liaspv)
+* [LinkedIn](https://www.linkedin.com/in/ipavlidakis/)
