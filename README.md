@@ -86,8 +86,7 @@ auto-translate \
 gr \
 es,it \
 /Users/test/Desktop/localisations/ \
-/Users/test/Desktop/google_account_credentials.json \
---api-key <YOUR-API-KEY>
+/Users/test/Desktop/google_account_credentials.json
 ```
 
 ## Notes
