@@ -1,0 +1,5 @@
+__DerivedData
+.DS_Store
+.build
+/Package.resolved
+/venslator.xcodeproj

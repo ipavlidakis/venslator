@@ -1,2 +1,3 @@
 # venslator
-A cli that helps localise your apps
+
+A description of this package.
