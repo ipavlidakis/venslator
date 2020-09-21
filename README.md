@@ -1,3 +1,5 @@
+![Swift](https://github.com/ipavlidakis/venslator/workflows/Swift/badge.svg)
+
 # Overview
 
 Do you think localisations are difficult? Especially if you are an indie developer without a localisation team to support you or the funds for the available services? 
